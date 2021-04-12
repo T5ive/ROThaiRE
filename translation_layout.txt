@@ -89,6 +89,7 @@ Item Description:
 	"Bonus ^CC6600STR^000000 is at least ^FF0000+10^000000:",
 	"^CC6600Base Level^000000 is at least ^FF0000100^000000:",
 	"^CC6600Base Level^000000 is ^FF000099^000000 or less:",
+	"^CC6600Base Level^000000 is less than ^FF0000175^000000:",
 	"For each ^0000FF20^000000 base ^CC6600STR^000000:",
 	"For each ^0000FF20^000000 combined sum of base ^CC6600AGI^000000 and ^CC6600VIT^000000:",
 	"For each ^0000FF50 ^CC6600Base Level^000000:",
@@ -119,6 +120,7 @@ Item Description:
 	"Increases magical damage against ^<Element>^000000 elemental monsters by %.",
 	"Increases physical and magical damage against ^FF000<Race/Size/Class>^000000 race/sized/class monsters by %.",
 	"Increases physical and magical damage against ^<Element>^000000 elemental monsters by %.",
+	"Increases physical and magical damage on Memorial Dungeon's ^0033CC<Instance Name>^000000 monsters by 15%.",
 	
 	"Decreases damage taken from ^FF000<Race/Size/Class>^000000 race/sized/class monsters by %.",
 	"Decreases damage taken from ^<Element>^000000 elemental monsters by %.",
@@ -137,10 +139,10 @@ Item Description:
 	"CRT +",
 	"P.ATK +",
 	"S.MATK +",
-	"H.Plus +",
-	"C.Rate +",
-	"Res +",
-	"Mres +",
+	"H.PLUS +",
+	"C.RATE +",
+	"RES +",
+	"MRES +",
 	
 	"<STAT> +1 multiplied with total skill level of ^0033CC<Class>^000000's exclusive/related skills:",
 	"^009900<Skill List> and <Last Skill>^000000",
@@ -187,6 +189,7 @@ Item Description:
 	"When equipped by ^0033CC<Certain Class>^000000:",
 	"When equipped as ^990099Accessory Right^000000:", -> Accessory (1)
 	"When equipped as ^990099Accessory Left^000000:", -> Accessory (2)
+	
 	"^663399Indestructible in battle^000000",
 	
 	- Basic Card Compounding:
@@ -227,13 +230,14 @@ Item Description:
 	
 	- Rental Items:
 	"^000088Rental Item^000000",
-	"^FF0000This item is not refundable.^000000",
-	"^FF0000This item cannot be traded with other accounts.^000000",
-	"^FF0000This item cannot be traded or moved to storage.^000000",
+	"^ff0000This item is not refundable.^000000",
+	"^ff0000If you open this item, it is not refundable anymore.^000000",
+	"^ff0000This item cannot be traded with other accounts.^000000",
+	"^ff0000This item cannot be traded or moved to storage.^000000",
 	
-	"^FF0000This item can only be sold to NPCs and moved to storage.^000000",
-	"^FF0000This item can only be sold to NPCs.",
-	"^FF0000This item will not be used in future events.^000000",
+	"^ff0000This item can only be sold to NPCs and moved to storage.^000000",
+	"^ff0000This item can only be sold to NPCs.",
+	"^ff0000This item will not be used in future events.^000000",
 	
 Equipment Info:
 			"________________________",
@@ -250,13 +254,25 @@ Equipment Info:
 			"^0000CCRequirement:^000000",
 			"Base Level X",
 			"<Job Classes>"
+	
+WoE/PvP:
+	"*Effects in WoE TE area",
+	"Increases physical damage against ^FF0000Players^000000 by 40%.",
+	"Increases magical damage against ^FF0000Players^000000 by 40%.",
+	"Random chance to inflict ^663399Bleeding^000000 status when dealing physical damage.",
+	"Random chance to inflict ^663399Bleeding^000000 status when dealing magical damage.",
+	"Decreases damage taken from ^FF0000Players^000000 by 10%.",
+	
+	"Decreases the target's SP by 10% on each physical attack. (This effect does not work with skills.)",
+	"Has a chance to reflect damage back to the enemy as well as casting ^009900Magic Mirror^000000.",
+	"Physical attacks have a certain chance to increase ATK by 200 for 3 seconds.",
 
 Exchange NPC Locations:
 	"<NAVI>^0033CCDesigner Heidam^000000<INFO>mal_in01,20,124,0,100,0,0</INFO></NAVI> can exchange it with Costume Enchant Stone Box 5.",
 		
-	"X  can be obtained from",
-	"^ffffff<NAVI>^4D4DFF[Cat Salesman Nyarom]^000000<INFO>itemmall,41,50,0,100,0,0</INFO></NAVI>^000000, ",
-	"by using Silvervine Cat Fruit or Zenny.",
+	"X can be obtained from",
+	"<NAVI>^4D4DFF[Cat Salesman Nyarom]^000000<INFO>itemmall,41,50,0,100,0,0</INFO></NAVI>^000000,",
+	"by using Silvervine Cat Fruit or Zeny.",
 	
 	"<NAVI>^4D4DFFCentro^000000<INFO>prontera,166,300,0,100,0,0</INFO></NAVI>^000000",
 	"<NAVI>^4D4DFFYves^000000<INFO>malangdo,152,136,0,100,0,0</INFO></NAVI>^000000",
@@ -280,6 +296,27 @@ Shadow Equipment:
 	Earring: "A sacred earring which is believed to protect its wearer. It also draws the wearer's potential abilities.",
 	Shield: "A small shield worn on the arm for additional defense. Needs a complete set to have bonus effect.",
 	Shoes: "A pair of shoes worn on top of normal shoes for additional defense. Needs a complete set to have bonus effect.",
+
+Enchant Stones:
+	Item Display Names:
+	Upper
+	Mid
+	Lower
+	Garment
+
+	Descriptions:
+	"A stone that awakens the potential of <Class>.",
+	"Gives the following effects when compounded on a slot of an Costume Upper Headgear.",
+	"Gives the following effects when compounded on a slot of an Costume Middle Headgear.",
+	"Gives the following effects when compounded on a slot of an Costume Lower Headgear.",
+	"Gives the following effects when compounded on a slot of an Costume Garment.",
+
+Grade Options:
+	"^CC3D3D[Additional Options by Grade]^000000",
+	"[Grade D]: Effect>",
+
+	Refine Level:
+	<Effect> per ^0000FF2 Refine Levels^000000
 
 Equipped Effect:
 	"^006400Since it is an equipped effect, it still will be displayed even when the effect (/effect) is turned off.^000000",
